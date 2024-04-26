@@ -1,0 +1,501 @@
+{% extends 'Navbar/generalnavbar.html' %}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Basics</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+{% block body %}
+<div class="Monkeyalign">
+<p class="Monkey" > Find Your Furry Friend </p></div>
+  <div class="container">
+    <div class="card">
+      <img src="https://assets.orvis.com/is/image/orvisprd/AdobeStock_25245434" alt="Lago di Braies">
+      <div class="card__details">
+          <span class="tag">DOG</span>
+      <span class="tag">Beagle</span>
+        <div class="name">BELLA</div>
+      <p>AGE: 2 years
+        <br>ANY OTHER INFO: Bella is a friendly and energetic Beagle looking for a loving home. She enjoys playtime and long walks in the park.</p>
+        <button><a href="{% url 'petmanagement' %}">BOOK NOW</a></button>
+      </div>
+
+    </div>
+    <div class="card">
+      <img src="https://warsawdog.com/wp-content/uploads/2021/06/labrador-retriever.jpg.webp" alt="Lago di Braies">
+      <div class="card__details">
+        <span class="tag">DOG</span>
+      <span class="tag">Labrador Retriever</span>
+      <div class="name">MAX</div>
+      <p>AGE: 3 years
+        <br>ANY OTHER INFO: Max is a gentle Labrador Retriever who loves water and playtime. He is good with kids and other pets.</p>
+        <button><a href="{% url 'petmanagement' %}">BOOK NOW</a></button>
+      </div>
+
+    </div>
+    <div class="card">
+      <img src="https://i.pinimg.com/originals/25/36/84/2536847d3051784e191a1801dceb7a65.jpg" alt="Lago di Braies">
+      <div class="card__details">
+      <span class="tag">DOG</span>
+      <span class="tag">Golden Retriever</span>
+      <div class="name">CHARLIE</div>
+      <p>AGE: 4 years
+        <br>ANY OTHER INFO: Charlie is a friendly and loyal Golden Retriever. He enjoys outdoor activities and is great with families.</p>
+        <button><a href="{% url 'petmanagement' %}">BOOK NOW</a></button>
+      </div>
+
+
+
+  </div>
+<div class="card">
+      <img src="https://www.dailypaws.com/thmb/jBj5iIZEzYsDjCiJd-Ke1fQuKVY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/american-eskimo-dog-grass-146784693-2000-61b75a34427c435686c87aad3496dcd5.jpg" alt="Lago di Braies">
+      <div class="card__details">
+        <span class="tag">DOG</span>
+      <span class="tag">American Eskimo</span>
+      <div class="name">SNOWY</div>
+      <p>AGE: 2.5 years
+        <br>ANY OTHER INFO: Snowy is a fluffy American Eskimo who loves to play in the snow. He is good with kids and enjoys being groomed.</p>
+       <button><a href="{% url 'petmanagement' %}">BOOK NOW</a></button>
+      </div>
+</div>
+    <div class="card">
+      <img src="https://s.yimg.com/ny/api/res/1.2/4uFlAiUYe5SZYGSwz3YhZw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNg--/https://media.zenfs.com/en/dog_time_927/a00ce6451039e0649ef0e55500318b56" alt="Lago di Braies">
+      <div class="card__details">
+         <span class="tag">DOG</span>
+        <span class="tag">Havanese</span>
+        <div class="name">Coco</div>
+        <p>Age: 2 years
+            <br>Coco is a playful and friendly Havanese dog. Loves socializing with other dogs and enjoys long walks in the park.</p>
+        <button><a href="{% url 'petmanagement' %}">BOOK NOW</a></button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://media.graphassets.com/output=format:webp/3tqcoVh1REmdRjCJiTiW" alt="Lago di Braies">
+      <div class="card__details">
+        <span class="tag">DOG</span>
+        <span class="tag">Maltipoo</span>
+        <div class="name">Buddy</div>
+        <p>Age: 1.5 years
+            <br>Buddy is an energetic and adorable Maltipoo. Enjoys playing fetch and cuddling on the couch. Great with kids!</p>
+        <button><a href="{% url 'petmanagement' %}">BOOK NOW</a></button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://fb-strapi.s3.amazonaws.com/large_Fit_Bark_king_charles_cavalier_spaniel_puppy_72999bed08.jpeg" alt="Lago di Braies">
+      <div class="card__details">
+         <span class="tag">DOG</span>
+        <span class="tag">Cavalier King Charles Spaniel</span>
+        <div class="name">Max</div>
+        <p>Age: 3 years
+            <br>Max is a playful and affectionate Cavalier King Charles Spaniel. Enjoys long walks and loves to be around people.</p>
+        <button><a href="{% url 'petmanagement' %}">BOOK NOW</a></button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://www.raisedrightpets.com/wp-content/uploads/2023/04/alvan-nee-xpQQLDlD7uI-unsplash-1-scaled.jpg" alt="Lago di Braies">
+      <div class="card__details">
+        <span class="tag">DOG</span>
+        <span class="tag">Pomeranian</span>
+        <div class="name">Fluffy</div>
+        <p>Age: 2 years
+            <br>Fluffy is an energetic Pomeranian with a playful personality. Loves to be pampered and enjoys chasing toys.</p>
+        <button><a href="{% url 'petmanagement' %}">BOOK NOW</a></button>
+      </div>
+    </div>
+
+ <div class="card">
+      <img src="https://images.squarespace-cdn.com/content/v1/5a0b2c078dd041094f8d04dd/1551906601856-CI6WPLZM2DUVZ4928U7I/Dad.jpg" alt="Lago di Braies">
+      <div class="card__details">
+        <span class="tag">CAT</span>
+        <span class="tag">Siamese</span>
+        <div class="name">Luna</div>
+        <p>Age: 2 years
+            <br>Luna is a graceful Siamese cat who enjoys lounging in sunny spots and chasing feather toys.</p>
+        <button><a href="{% url 'petmanagement' %}">BOOK NOW</a></button>
+      </div>
+    </div>
+     <div class="card">
+      <img src="https://image.petmd.com/files/styles/863x625/public/2023-04/ragdoll-cat.jpg" alt="Lago di Braies">
+      <div class="card__details">
+        <span class="tag">CAT</span>
+        <span class="tag">Ragdoll</span>
+        <div class="name">Whiskers</div>
+        <p>Age: 3 years
+            <br>Whiskers is a charming Ragdoll cat who loves to laze around and enjoys gentle cuddles.</p>
+       <button><a href="{% url 'petmanagement' %}">BOOK NOW</a></button>
+      </div>
+    </div>
+     <div class="card">
+      <img src="https://cdn.shopify.com/s/files/1/1149/5008/files/tobias-2KZfAwi-0W4-unsplash.jpg?v=1623657196" alt="Lago di Braies">
+      <div class="card__details">
+         <span class="tag">CAT</span>
+        <span class="tag">American Shorthair</span>
+        <div class="name">Mittens</div>
+        <p>Age: 3 years
+            <br>Mittens is a charming American Shorthair cat who loves to cuddle. He's known for his playful antics and gets along well with other pets.</p>
+        <button><a href="{% url 'petmanagement' %}">BOOK NOW</a></button>
+      </div>
+    </div>
+     <div class="card">
+      <img src="https://i.pinimg.com/736x/fd/4c/3f/fd4c3f53d330a5a4e4983ce6f71d0674.jpg" alt="Lago di Braies">
+      <div class="card__details">
+          <span class="tag">CAT</span>
+        <span class="tag">Munchkin</span>
+        <div class="name">Caramel</div>
+        <p>Age: 3 years
+            <br>Caramel is a charming Munchkin cat known for its sweet demeanor. Enjoys cuddles and lounging in sunny spots.</p>
+        <button><a href="{% url 'petmanagement' %}">BOOK NOW</a></button>
+      </div>
+    </div>
+     <div class="card">
+      <img src="https://www.thesprucepets.com/thmb/D5s03LINbIYpZuiG6uvBpKrAKXk=/3500x0/filters:no_upscale():strip_icc()/GettyImages-623368786-f66c97ad6d2d494287b448415f4340a8.jpg" alt="Lago di Braies">
+      <div class="card__details">
+        <span class="tag">CAT</span>
+        <span class="tag">Birman</span>
+        <div class="name">Whiskers</div>
+        <p>Age: 3 years
+            <br>Whiskers is a charming Birman cat with striking blue eyes. Enjoys lounging in sunny spots and playing with feather toys.</p>
+        <button><a href="{% url 'petmanagement' %}">BOOK NOW</a></button>
+      </div>
+    </div>
+     <div class="card">
+      <img src="https://www.dailypaws.com/thmb/ffnDWAclAUiu1LX1EPMAdxCgjkw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/turkish-van-from-above-386550048-bf294ffdf4bc426e9227266cbe4a5eef.jpg" alt="Lago di Braies">
+      <div class="card__details">
+       <span class="tag">CAT</span>
+        <span class="tag">Turkish Van</span>
+        <div class="name">Mittens</div>
+        <p>Age: 3 years
+            <br>Mittens is a playful Turkish Van cat known for its distinctive color pattern. Enjoys climbing and exploring new places.</p>
+        <button><a href="{% url 'petmanagement' %}">BOOK NOW</a></button>
+      </div>
+    </div>
+     <div class="card">
+      <img src="https://d3544la1u8djza.cloudfront.net/APHI/Blog/2021/12-27/Egyptian+mau+cat+relaxing+on+a+gray+green+couch-min.jpg" alt="Lago di Braies">
+      <div class="card__details">
+        <span class="tag">CAT</span>
+        <span class="tag">Egyptian Mau</span>
+        <div class="name">Whiskers</div>
+        <p>Age: 2 years
+            <br>Whiskers is an energetic Egyptian Mau known for its spotted coat. Enjoys interactive play and sunbathing.</p>
+        <button><a href="{% url 'petmanagement' %}">BOOK NOW</a></button>
+      </div>
+    </div>
+     <div class="card">
+      <img src="https://www.petrebels.com/en/wp-content/uploads/sites/3/2023/03/sergey-semin-slJ2lG1Pego-unsplash-1024x681-1.jpg" alt="Lago di Braies">
+      <div class="card__details">
+        <span class="tag">CAT</span>
+        <span class="tag">Abyssinian</span>
+        <div class="name">Whiskers</div>
+        <p>Age: 3 years
+            <br>Whiskers is an adventurous Abyssinian cat with a playful nature. Enjoys climbing and exploring new spaces.</p>
+        <button><a href="{% url 'petmanagement' %}">BOOK NOW</a></button>
+      </div>
+
+    </div>
+      <div class="card">
+      <img src="https://as2.ftcdn.net/v2/jpg/03/27/61/35/1000_F_327613561_i8XPeGdIRzSRR465ncl7RLT2YCc9aX89.jpg" alt="Lago di Braies">
+      <div class="card__details">
+         <span class="tag">RABBIT</span>
+        <span class="tag">Holland Lop</span>
+        <div class="name">Cottonball</div>
+        <p>Age: 1.5 years
+            <br>Cottonball is an adorable Holland Lop rabbit known for its gentle nature. Enjoys hopping around and nibbling on fresh veggies.</p>
+        <button><a href="{% url 'petmanagement' %}">BOOK NOW</a></button>
+      </div>
+      </div>
+       <div class="card">
+      <img src="https://crueltyfreeblog.files.wordpress.com/2015/05/baby-milk-tea1.jpg?w=676" alt="Lago di Braies">
+      <div class="card__details">
+        <span class="tag">RABBIT</span>
+        <span class="tag">European rabbit</span>
+        <div class="name">Whiskers</div>
+        <p>Age: 2 years
+            <br>Whiskers is an adorable European rabbit known for its curious nature. Enjoys nibbling on fresh greens and exploring its surroundings.</p>
+        <button><a href="{% url 'petmanagement' %}">BOOK NOW</a></button>
+      </div>
+      </div>
+       <div class="card">
+      <img src="https://pbs.twimg.com/media/B-84EcPWwAAhNCD.jpg" alt="Lago di Braies">
+      <div class="card__details">
+         <span class="tag">RABBIT</span>
+        <span class="tag">American Fuzzy Lop</span>
+        <div class="name">Cotton</div>
+        <p>Age: 1.5 years
+            <br>Cotton is an adorable American Fuzzy Lop rabbit with a soft and fluffy coat. Enjoys hopping around and munching on hay.</p>
+        <button><a href="{% url 'petmanagement' %}">BOOK NOW</a></button>
+      </div>
+      </div>
+       <div class="card">
+      <img src="https://image.petmd.com/files/styles/863x625/public/2023-08/netherland.dwarf_.jpg" alt="Lago di Braies">
+      <div class="card__details">
+        <span class="tag">RABBIT</span>
+        <span class="tag">Netherland Dwarf Rabbit</span>
+       <div class="name">Thumper</div>
+        <p>Age: 1 year
+            <br>Thumper is an energetic Netherland Dwarf Rabbit who loves exploring and nibbling on fresh veggies. A delightful companion!</p>
+       <button><a href="{% url 'petmanagement' %}">BOOK NOW</a></button>
+      </div>
+      </div>
+       <div class="card">
+      <img src="https://www.reptilecymru.co.uk/wp-content/uploads/2021/03/Syrian-Hamster-Handling.png" alt="Lago di Braies">
+      <div class="card__details">
+        <span class="tag">HAMSTER</span>
+        <span class="tag">Golden hamster</span>
+       <div class="name">Sunshine</div>
+        <p>Age: 6 months
+            <br>Sunshine is a lively Golden Hamster who enjoys running on their wheel and munching on seeds. A little ball of energy!</p>
+       <button><a href="{% url 'petmanagement' %}">BOOK NOW</a></button>
+      </div>
+      </div>
+       <div class="card">
+      <img src="https://www.tursar.ru/uploads/img2544_2.jpg" alt="Lago di Braies">
+      <div class="card__details">
+        <span class="tag">HAMSTER</span>
+        <span class="tag">Allocricetulus</span>
+         <div class="name">Cinnamon</div>
+        <p>Age: 1 year
+            <br>Cinnamon is an adorable Allocricetulus hamster with a soft and fluffy coat. Enjoys exploring and nesting in cozy corners.</p>
+        <button><a href="{% url 'petmanagement' %}">BOOK NOW</a></button>
+      </div>
+      </div>
+       <div class="card">
+      <img src="https://www.hindustantimes.com/ht-img/img/2023/05/29/1600x900/juan-camilo-guarin-p-57SHaZUAOtQ-unsplash_1685360741747_1685361042253.jpg" alt="Lago di Braies">
+      <div class="card__details">
+        <span class="tag">PARROT</span>
+        <div class="name">Rio</div>
+        <p>Age: 3 years
+            <br>Rio is a vibrant and talkative parrot with a colorful plumage. Enjoys mimicking sounds and loves interacting with people.</p>
+       <button><a href="{% url 'petmanagement' %}">BOOK NOW</a></button>
+      </div>
+      </div>
+       <div class="card">
+      <img src="https://images.theconversation.com/files/162205/original/image-20170323-4938-8cxh6g.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=926&fit=clip" alt="Lago di Braies">
+      <div class="card__details">
+        <span class="tag">PIGEON</span>
+         <div class="name">Pippin</div>
+        <p>Age: 2 years
+            <br>Pippin is a friendly pigeon with a striking plumage. Enjoys flying around and is known for its gentle cooing.</p>
+       <button><a href="{% url 'petmanagement' %}">BOOK NOW</a></button>
+      </div>
+      </div>
+       <div class="card">
+      <img src="https://www.ibgroup.co.in/wp-content/uploads/2019/11/IB-Chicks-_2.jpg" alt="Lago di Braies">
+      <div class="card__details">
+         <span class="tag">CHICKENS</span>
+        <div class="name">Clucky,Pecky,Chicky</div>
+        <p>Age: 1 year
+            <br>Clucky and Pecky and Chicky are a three friendly chickens who enjoy scratching for worms and laying fresh eggs.</p>
+       <button><a href="{% url 'petmanagement' %}">BOOK NOW</a></button>
+      </div>
+      </div>
+       <div class="card">
+      <img src="https://www.thoughtco.com/thmb/l1LdD4l0ClkCuYzuZv4wS7hK--g=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/baby_pygmy_goat-acd81bd862e04271935bbecdaa936d21.jpg" alt="Lago di Braies">
+      <div class="card__details">
+        <span class="tag">GOATS</span>
+        <span class="tag">American Pygmy</span>
+        <div class="name">Gus</div>
+        <p>Age: 3 years
+            <br> Gus is a playful American Pygmy goat who love to climb and explore their surroundings.</p>
+        <button><a href="{% url 'petmanagement' %}">BOOK NOW</a></button>
+      </div>
+      </div>
+       <div class="card">
+      <img src="https://i0.wp.com/animalofthings.com/wp-content/uploads/2022/10/Russian-White-Goat.jpg?fit=2000%2C1333&ssl=1" alt="Lago di Braies">
+      <div class="card__details">
+         <span class="tag">GOATS</span>
+        <span class="tag">Russian White Dairy</span>
+        <div class="name">Snowflake</div>
+        <p>Age: 4 years
+            <br> Snowflake is a friendly Russian White Dairy Goat known for her sweet temperament and excellent milk production.</p>
+        <button><a href="{% url 'petmanagement' %}">BOOK NOW</a></button>
+      </div>
+      </div>
+       <div class="card">
+      <img src="https://equinehelper.com/wp-content/uploads/2023/09/3-3.jpg" alt="Lago di Braies">
+      <div class="card__details">
+        <span class="tag">HORSE</span>
+        <span class="tag">Arabian horse</span>
+      <div class="name">Aladdin</div>
+        <p>Age: 6 years
+            <br> Aladdin is a magnificent Arabian horse known for his elegant appearance and spirited personality.</p>
+        <button><a href="{% url 'petmanagement' %}">BOOK NOW</a></button>
+      </div>
+      </div>
+       <div class="card">
+      <img src="https://madbarn.com/wp-content/uploads/2023/10/Friesian-Horse-Breed-Guide.jpg" alt="Lago di Braies">
+      <div class="card__details">
+        <span class="tag">HORSE</span>
+        <span class="tag">Friesian horse</span>
+       <div class="name">Midnight Shadow</div>
+        <p>Age: 7 years
+            <br> Midnight Shadow is a majestic Friesian horse known for its beautiful black coat and gentle temperament.</p>
+       <button><a href="{% url 'petmanagement' %}">BOOK NOW</a></button>
+      </div>
+      </div>
+       <div class="card">
+      <img src="https://pm1.aminoapps.com/6883/aaa7f590e0276b95ea0b8eb8db1502dc843e913fr1-736-543v2_hq.jpg" alt="Lago di Braies">
+      <div class="card__details">
+        <span class="tag">HORSE</span>
+        <span class="tag">Dutch Warmblood</span>
+        <div class="name">Majestic Spirit</div>
+        <p>Age: 6 years
+            <br> Majestic Spirit is a graceful Dutch Warmblood known for its elegant movements and friendly demeanor.</p>
+       <button><a href="{% url 'petmanagement' %}">BOOK NOW</a></button>
+      </div>
+      </div>
+       <div class="card">
+      <img src="https://minipigs.dk/sites/default/files/2021-04/G%C3%B6ttingen-Minipigs_hero-banner_0.jpg" alt="Lago di Braies">
+      <div class="card__details">
+        <span class="tag">PIG</span>
+        <span class="tag">Göttingen minipig</span>
+        <div class="name">Truffle</div>
+        <p>Age: 1 year
+            <br> Truffle is an adorable Göttingen Minipig known for its playful antics and charming personality.</p>
+       <button><a href="{% url 'petmanagement' %}">BOOK NOW</a></button>
+      </div>
+      </div>
+       <div class="card">
+      <img src="https://rurallivingtoday.com/wp-content/uploads/red-wattle-pig-in-shed.jpg" alt="Lago di Braies">
+      <div class="card__details">
+        <span class="tag">PIG</span>
+        <span class="tag">Red Wattle Hog</span>
+         <div class="name">Bacon</div>
+        <p>Age: 2 years
+            <br> Bacon is a friendly Red Wattle Hog with a charming personality and a love for mud baths.</p>
+        <button><a href="{% url 'petmanagement' %}">BOOK NOW</a></button>
+      </div>
+      </div>
+       <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Goldfishorange.jpg/220px-Goldfishorange.jpg" alt="Lago di Braies">
+      <div class="card__details">
+        <span class="tag">FISH</span>
+        <span class="tag">Fantail</span>
+        <div class="name">Splash</div>
+        <p>Age: 1 year
+            <br> Splash is a lively Fantail Goldfish with vibrant colors and enjoys swimming in the aquarium.</p>
+        <button><a href="{% url 'petmanagement' %}">BOOK NOW</a></button>
+
+      </div>
+      </div>
+       <div class="card">
+      <img src="https://catdogfish.com/wp-content/uploads/2016/05/rachu-goldfish_fish-breed_catdogfish.jpg" alt="Lago di Braies">
+      <div class="card__details">
+        <span class="tag">FISH</span>
+        <span class="tag">Ranchu</span>
+        <div class="name">Bubbles</div>
+        <p>Age: 2 years
+            <br> Bubbles is an elegant Ranchu Goldfish with a distinctive appearance and graceful swimming style.</p>
+       <button><a href="{% url 'petmanagement' %}">BOOK NOW</a></button>
+      </div>
+      </div>
+       <div class="card">
+      <img src="https://worldanimalfoundation.org/wp-content/uploads/2023/02/domestic-water-buffalo-review.jpg" alt="Lago di Braies">
+      <div class="card__details">
+        <span class="tag">BUFFALO</span>
+      <div class="name">Mocha</div>
+        <p>Age: 4 years
+            <br>Mocha is a friendly Domestic Water Buffalo with a gentle disposition and a love for grazing in open fields.</p>
+       <button><a href="{% url 'petmanagement' %}">BOOK NOW</a></button>
+      </div>
+      </div>
+       <div class="card">
+      <img src="https://petkeen.com/wp-content/uploads/2022/06/Nelore-Cattle-Breed_Leonidas-Santana_Shutterstock-760x570.jpg" alt="Lago di Braies">
+      <div class="card__details">
+        <span class="tag">COW</span>
+       <div class="name">Buddy</div>
+        <p>Age: 3 years
+            <br>Buddy is a gentle Nelore Cattle known for its distinctive hump and docile nature. Enjoys grazing in lush pastures.</p>
+     <button><a href="{% url 'petmanagement' %}">BOOK NOW</a></button>
+      </div>
+      </div>
+<style>
+  body {
+    background: radial-gradient(circle at 10% 20%, rgb(102, 116, 236) 0%, rgb(50, 231, 219) 90%);
+    font-family: "Montserrat", sans-serif;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 12px;
+    height: 214px;
+    object-fit: cover;
+  }
+  .container {
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .card {
+    background-color: white;
+    border: 1px solid #bacdd8;
+    padding: 10px;
+    border-radius: 12px;
+    width: 325px;
+    margin: 20px;
+  }
+
+  .tag {
+    padding: 4px 8px;
+    border: 1px solid #e5eaed;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #788697;
+  }
+
+  .name {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top:26px;
+  }
+
+  p {
+    font-size: 14px;
+    color: #7f8c9b;
+    line-height: 150%;
+  }
+
+  button {
+    border: none;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-weight: 600;
+    background-color: #FFC800;
+    margin: 20px 0;
+    cursor: pointer;
+  }
+
+  button:focus,
+  button:hover {
+    color: black;
+  }
+
+  .card__details {
+    text-align: center;
+  }
+
+  .Monkey {
+    font-size: 35px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    margin: 5px;
+    color: black;
+    text-align: center;
+  }
+
+  .Monkeyalign {
+    border: 1px solid white;
+    background: white;
+    transition: all 0.4s ease;
+    border-radius: 20px;
+    margin: auto;
+    width: 30%;
+    height: 60px;
+  }
+</style>
+{% endblock %}
+</body>
+</html>

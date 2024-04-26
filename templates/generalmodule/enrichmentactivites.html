@@ -1,0 +1,81 @@
+{% extends 'Navbar/generalnavbar.html' %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrichment Activities</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+{% block body %}
+    <div class="container">
+        <header style="text-align: center; margin-bottom: 30px;">
+            <h1 style="color: #FFC800; font-size: 36px;">Enrichment Activities</h1>
+            <p style="color: black; font-weight: bold; font-size: 18px;">Enhance your pet's well-being with engaging enrichment activities that stimulate their mind and keep them happy.</p>
+        </header>
+
+        <section>
+            <h2 style="color: #FFC800; font-size: 28px;">Mental Stimulation Games</h2>
+            <p style="color: black; font-weight: bold; font-size: 16px;">Provide puzzle toys and games that challenge their cognitive abilities. Hide treats in puzzle feeders to encourage problem-solving.</p>
+        </section>
+
+        <section>
+            <h2 style="color: #FFC800; font-size: 28px;">Interactive Toys</h2>
+            <p style="color: black; font-weight: bold; font-size: 16px;">Invest in toys that promote interaction. For dogs, consider toys like treat-dispensing balls. Cats often enjoy toys that mimic prey-like movements.</p>
+        </section>
+
+        <section>
+            <h2 style="color: #FFC800; font-size: 28px;">Training Sessions</h2>
+            <p style="color: black; font-weight: bold; font-size: 16px;">Regular training sessions not only teach commands but also engage their minds. Use positive reinforcement techniques for a fun and rewarding experience.</p>
+        </section>
+
+        <section>
+            <h2 style="color: #FFC800; font-size: 28px;">Additional Enrichment Activities</h2>
+
+            <h3 style="color: #FFC800; font-size: 24px;">Agility Training</h3>
+            <p style="color: black; font-weight: bold; font-size: 16px;">Set up a mini obstacle course in your backyard or living space. Teach your pets to navigate through tunnels, jump over hurdles, and weave through poles.</p>
+
+            <h3 style="color: #FFC800; font-size: 24px;">Hide and Seek</h3>
+            <p style="color: black; font-weight: bold; font-size: 16px;">Hide treats or favorite toys around your home and encourage your pets to find them. This game engages their sense of smell and provides mental stimulation.</p>
+
+            <h3 style="color: #FFC800; font-size: 24px;">DIY Puzzle Feeders</h3>
+            <p style="color: black; font-weight: bold; font-size: 16px;">Create homemade puzzle feeders using recycled materials. Fill them with kibble or treats, and challenge your pets to figure out how to get the food out.</p>
+        </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-xLlhUopJbOn4L4J7fFf8eBL6dsBV6TnZlO3rJzZ06dE=" crossorigin="anonymous"></script>
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+        body {
+            background: linear-gradient(to right, #57c1eb, #246fa5);
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+            margin-top: 50px;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        header {
+            border-bottom: 2px solid #FFC800;
+            padding-bottom: 20px;
+        }
+
+        /* Additional custom styles */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+    </style>
+{% endblock %}
+</body>
+</html>

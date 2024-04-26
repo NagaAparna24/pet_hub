@@ -1,0 +1,157 @@
+{% extends 'Navbar/usernavbar.html' %}
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pet Articles</title>
+
+</head>
+<body>
+{% block body %}
+<style>
+    body {
+       font-family: 'Montserrat', sans-serif;
+        color: #FFC800;
+        background-color: white;
+        padding: 20px;
+        margin: 0;
+    }
+
+    h1, h2 {
+        color: #FFC800;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    article {
+        background-color: #FFC800;
+        color: white;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    footer {
+        text-align: center;
+        margin-top: 20px;
+        color: #FFC800;
+    }
+
+    /* Modal Styles */
+    .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal-content {
+        background-color: #FFC800;
+        color: white;
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    .close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        color: white;
+        cursor: pointer;
+    }
+</style>
+<div class="container">
+    <header>
+        <h1>Pet Care Articles</h1>
+    </header>
+
+    <article>
+        <h2>Choosing the Right Pet for Your Lifestyle</h2>
+        <p>Every pet is unique, and choosing the right one for your lifestyle is crucial. Learn about different breeds, sizes, and energy levels to find a furry friend that perfectly fits into your daily routine.</p>
+        <a class="read-more" onclick="showModal('Choosing the Right Pet for Your Lifestyle', 'Every pet is unique, and choosing the right one for your lifestyle is crucial. Learn about different breeds, sizes, and energy levels to find a furry friend that perfectly fits into your daily routine.');">Read more...</a>
+    </article>
+
+    <article>
+        <h2>The ABCs of Pet Nutrition</h2>
+        <p>Understanding your pet's nutritional needs is essential for their overall health and well-being. Explore the basics of pet nutrition, including the importance of a balanced diet, key nutrients, and common dietary mistakes to avoid.</p>
+        <a class="read-more" onclick="showModal('The ABCs of Pet Nutrition', 'Understanding your pet\'s nutritional needs is essential for their overall health and well-being. Explore the basics of pet nutrition, including the importance of a balanced diet, key nutrients, and common dietary mistakes to avoid.');">Read more...</a>
+    </article>
+
+    <article>
+        <h2>The Art of Dog Training: A Beginner's Guide</h2>
+        <p>Training your new canine companion can be a rewarding experience. Discover effective and humane dog training techniques for beginners, covering basic commands, positive reinforcement, and building a strong bond with your furry friend.</p>
+        <a class="read-more" onclick="showModal('The Art of Dog Training: A Beginner\'s Guide', 'Training your new canine companion can be a rewarding experience. Discover effective and humane dog training techniques for beginners, covering basic commands, positive reinforcement, and building a strong bond with your furry friend.');">Read more...</a>
+    </article>
+
+    <article>
+        <h2>Cat Care 101: Tips for Happy and Healthy Felines</h2>
+        <p>Cats are independent creatures, but they still need proper care and attention. Learn essential tips for keeping your feline friend happy and healthy, including grooming, litter box maintenance, and creating a stimulating environment.</p>
+        <a class="read-more" onclick="showModal('Cat Care 101: Tips for Happy and Healthy Felines', 'Cats are independent creatures, but they still need proper care and attention. Learn essential tips for keeping your feline friend happy and healthy, including grooming, litter box maintenance, and creating a stimulating environment.');">Read more...</a>
+    </article>
+
+    <article>
+        <h2>Emergency Preparedness for Pet Owners</h2>
+        <p>Disasters can strike at any time, and being prepared is key to ensuring your pet's safety. Explore the essential steps in creating an emergency plan for your pets, including evacuation strategies, assembling a pet emergency kit, and more.</p>
+        <a class="read-more" onclick="showModal('Emergency Preparedness for Pet Owners', 'Disasters can strike at any time, and being prepared is key to ensuring your pet\'s safety. Explore the essential steps in creating an emergency plan for your pets, including evacuation strategies, assembling a pet emergency kit, and more.');">Read more...</a>
+    </article>
+
+    <article>
+        <h2>Fun and Engaging DIY Toys for Your Small Pets</h2>
+        <p>Keep your small pets entertained with easy-to-make DIY toys! Discover creative and safe toy ideas for rabbits, guinea pigs, hamsters, and other small animals, adding excitement to their environment while promoting mental stimulation.</p>
+        <a class="read-more" onclick="showModal('Fun and Engaging DIY Toys for Your Small Pets', 'Keep your small pets entertained with easy-to-make DIY toys! Discover creative and safe toy ideas for rabbits, guinea pigs, hamsters, and other small animals, adding excitement to their environment while promoting mental stimulation.');">Read more...</a>
+    </article>
+
+    <footer>
+        <p>&copy; 2024 Pet Lovers Magazine</p>
+    </footer>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="myModal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <p id="modalContent"></p>
+    </div>
+</div>
+
+<script>
+    function showModal(title, content) {
+        document.getElementById('modalTitle').innerHTML = title;
+        document.getElementById('modalContent').innerHTML = content;
+        document.getElementById('myModal').style.display = 'flex';
+    }
+
+    function closeModal() {
+        document.getElementById('myModal').style.display = 'none';
+    }
+
+    // Close the modal if the user clicks outside of it
+    window.onclick = function(event) {
+        if (event.target === document.getElementById('myModal')) {
+            closeModal();
+        }
+    }
+</script>
+{% endblock %}
+</body>
+</html>

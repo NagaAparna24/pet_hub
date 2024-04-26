@@ -1,0 +1,79 @@
+{% extends 'Navbar/generalnavbar.html' %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grooming Essentials</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    {% block body %}
+    <div class="container text-center">
+        <h1 style="color: #FFC800;font-weight:bold">Grooming Essentials</h1>
+
+        <h2 style="color: #FFC800;">Brushing Techniques</h2>
+        <p style="color: black;font-weight:bold">Regular brushing helps in removing loose fur, preventing mats, and distributing natural oils. Use appropriate brushes for different coat types (slicker brushes, combs, etc.). It's essential to be gentle and patient, especially with pets that are not accustomed to grooming.</p>
+         <a href="https://youtu.be/54WroRd1GiA" target="_blank">Watch on YouTube</a>
+
+        <h2 style="color: #FFC800;">Bathing Tips</h2>
+        <p style="color: black;font-weight:bold">Choose pet-friendly shampoos and bathe them according to their needs. Dogs may require bathing every few weeks, while some cats can go without baths. Be mindful of water temperature and ensure a comfortable bathing environment. After the bath, thoroughly dry your pet to prevent skin issues.</p>
+        <a href="https://youtu.be/alF-r5DlERY" target="_blank">Watch on YouTube</a>
+
+        <h2 style="color: #FFC800;">Nail Trimming</h2>
+        <p style="color: black;font-weight:bold">Regular nail trims are crucial to prevent discomfort and potential injuries. Use a quality pair of pet nail clippers and be cautious not to cut into the quick. If you're unsure, seek guidance from a professional groomer or veterinarian.</p>
+        <a href="https://youtu.be/_3hepjtT7og" target="_blank">Watch on YouTube</a>
+
+        <h2 style="color: #FFC800;">Dental Care</h2>
+        <p style="color: black;font-weight:bold">Maintain your pet's oral health by brushing their teeth regularly. Use a toothbrush designed for pets and pet-friendly toothpaste. Dental treats and toys can also contribute to good oral hygiene. Regular dental care prevents bad breath and dental issues.</p>
+        <a href="https://youtu.be/54WroRd1GiA" target="_blank">Watch on YouTube</a>
+
+        <h2 style="color: #FFC800;">Ear Cleaning</h2>
+        <p style="color: black;font-weight:bold">Check your pet's ears regularly for dirt, wax, or signs of infection. Use a gentle pet ear cleaner and cotton balls to clean the ears. Avoid inserting anything into the ear canal. If you notice redness, swelling, or a foul odor, consult with your veterinarian.</p>
+        <a href="https://youtu.be/5C39A9UU720" target="_blank">Watch on YouTube</a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-xLlhUopJbOn4L4J7fFf8eBL6dsBV6TnZlO3rJzZ06dE=" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #FFD54F, #FF9800, #E65100);
+            color: black;
+            font-family: 'Montserrat', sans-serif;
+            margin-top: 50px;
+        }
+
+        h1,
+        h2 {
+            color: #FFC800;
+        }
+
+        h1,
+        h2 {
+            font-weight: bold; /* Add this line to make h1 and h2 headings bold */
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        a {
+            color: #FFC800;
+            text-decoration: none;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        /* Add your additional custom styles here */
+    </style>
+    {% endblock %}
+
+</body>
+
+</html>

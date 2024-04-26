@@ -1,0 +1,88 @@
+{% extends 'Navbar/usernavbar.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Return Request Form</title>
+
+</head>
+{% block body %}
+<body>
+    <div class="form-container">
+        <h2>Pet Return Request Form</h2>
+       <form action="{% url 'returnandrequest' %}" method="post">
+            {% csrf_token %}
+            <label for="pet_id">ID:</label><br>
+            <input type="text" id="pet_id" name="pet_id" required><br>
+
+            <label for="pet_name">Name of Pet:</label><br>
+            <input type="text" id="pet_name" name="pet_name" required><br>
+
+            <label for="pet_breed">Breed:</label><br>
+            <input type="text" id="pet_breed" name="pet_breed" required><br>
+
+            <label for="pet_age">Age:</label><br>
+            <input type="text" id="pet_age" name="pet_age" required><br>
+
+            <label for="return_reason">Reason for Return:</label><br>
+            <textarea id="return_reason" name="return_reason" rows="4" cols="50" required></textarea><br>
+
+            <label for="return_date">Planned Return Date:</label><br>
+            <input type="date" id="return_date" name="return_date" required><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <style>
+        body {
+            background-color: #FFFFFF;
+            font-family: Montserrat, Arial, sans-serif;
+        }
+        .form-container {
+            width: 40%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #FFC800;
+            border-radius: 0px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="date"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #CCCCCC;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-family: Montserrat, Arial, sans-serif;
+        }
+        textarea {
+            resize: vertical;
+            height: 100px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #FFC800;
+            border: none;
+            border-radius: 5px;
+            color: #FFFFFF;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-family: Montserrat, Arial, sans-serif;
+        }
+        input[type="submit"]:hover {
+            background-color: #FFD344;
+        }
+    </style>
+{% endblock %}
+</body>
+</html>

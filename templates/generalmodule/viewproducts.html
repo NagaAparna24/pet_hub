@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Products</title>
+    <!-- box icons  -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- styles  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- HEADER  -->
+    <header>
+      <div class="nav container">
+    <a href="#" class="logo" style="color: black;"><span></span>PRODUCTS</a>
+          <a href="{% url 'generalhomepage' %}">&#8249; Back</a>
+    <ul class="nav-list">
+    <li class="nav-item">
+        <a href="#" class="nav-link" style="color: black;">All</a>
+    </li>
+    <li class="nav-item">
+        <a href="#" class="nav-link" style="color: black;">Dog</a>
+    </li>
+    <li class="nav-item">
+        <a href="#" class="nav-link" style="color: black;">Cat</a>
+    </li>
+    <li class="nav-item">
+        <a href="#" class="nav-link" style="color: black;">Toys</a>
+    </li>
+    <li class="nav-item">
+        <a href="#" class="nav-link" style="color: black;">Others</a>
+    </li>
+</ul>
+
+
+            <!-- CART ICON  -->
+            <i class='bx bx-shopping-bag' id="cart-icon"></i>
+
+            <!-- CART  -->
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+
+                <!-- CONTENT  -->
+                <div class="cart-content">
+                </div>
+                <!-- TOTAL   -->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <!-- BUY BUTTON  -->
+                <button type="button" class="btn-buy" style="background-color: #FFC800;">Buy Now</button>
+
+
+                <!-- CART CLOSE  -->
+                <i class='bx bx-x' id="cart-close"></i>
+            </div>
+        </div>
+    </header>
+    <!-- SHOP SECTION  -->
+    <section class="shop container">
+        <h2 class="section-title">Shop Products</h2>
+        <!-- CONTENT  -->
+        <div class="shop-content">
+            <!-- BOX 1 -->
+            <div class="product-box">
+                <img src="https://cdn.shopify.com/s/files/1/0272/4714/9155/products/Healthy-Treats-PUPPY-Pouch.jpg?v=1623060931" alt="" class="product-img">
+                <h2 class="product-title">Himalaya Healthy Pet Food – Adult – </h2>
+                <span class="product-price">₹ 850</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 2 -->
+            <div class="product-box">
+                <img src="https://www.thehungrypuppy.com/cdn/shop/products/ALS_MultiProtein_front-1024x1024.jpg?v=1641935345" alt="" class="product-img">
+                <h2 class="product-title">Canidae All Life Stages - Chicken, Turkey, Lamb & Fish,</h2>
+                <span class="product-price">₹ 1000</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 3 -->
+            <div class="product-box">
+                <img src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-720w,f_auto,q_auto:best/newscms/2024_05/3573074/41otfzwcl1l-sl500-633450460245e.jpg" alt="" class="product-img">
+                <h2 class="product-title">Hill's Science Diet Puppy Small Bites Dry Dog Food</h2>
+                <span class="product-price">₹ 950</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 4 -->
+            <div class="product-box">
+                <img src="https://www.smartpets.store/wp-content/uploads/2021/07/1-7.jpg" alt="" class="product-img">
+                <h2 class="product-title">IAMS Proactive Health Adult Large Breed Dogs    </h2>
+                <span class="product-price">₹ 850</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 5 -->
+            <div class="product-box">
+                <img src="https://supervet.in/wp-content/uploads/2021/04/A-26.png" alt="" class="product-img">
+                <h2 class="product-title">Pedigree Adult Dry Dog Food- Vegetarian, 1.2kg and 3 kg Pack</h2>
+                <span class="product-price"> ₹ 850</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 6 -->
+            <div class="product-box">
+                <img src="https://iheartdogs.com/wp-content/uploads/2023/07/2015314.jpg" alt="" class="product-img">
+                <h2 class="product-title">ACANA-FREEZE DRIED PATTIES</h2>
+                <span class="product-price">₹ 900</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 7 -->
+               <div class="product-box">
+                <img src="https://m.media-amazon.com/images/I/51E3Vt4f6AL._SL500_.jpg" alt="" class="product-img">
+                <h2 class="product-title">ROYAL CANIN</h2>
+                <span class="product-price">₹ 850</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 8 -->
+             <div class="product-box">
+                <img src="https://i5.walmartimages.com/seo/Instinct-Raw-Boost-Grain-Free-Recipe-with-Real-Chicken-Natural-Dry-Dog-Food-by-Nature-s-Variety-10-lb-Bag_e5eb275c-391a-427f-940c-77c0fc5e3f33_3.5e46f1ebdd9165ca6edffe53264adf04.jpeg?odnHeight=640&odnWidth=640&odnBg=FFFFFF" alt="" class="product-img">
+                <h2 class="product-title">Instinct Raw BOOST</h2>
+                <span class="product-price">₹ 850</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+             <div class="product-box">
+                <img src="https://m.media-amazon.com/images/I/61X4aEbAtzL._AC_UF1000,1000_QL80_.jpg" alt="" class="product-img">
+                <h2 class="product-title">Whiskas Pet Food</h2>
+                <span class="product-price">₹ 850</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+             <div class="product-box">
+                <img src="https://images.jdmagicbox.com/quickquotes/images_main/royal-canin-persian-kitten-dry-cat-food-240555132-x34gytzb.jpg" alt="" class="product-img">
+                <h2 class="product-title">Royal Canin Persian Kitten Dry Cat Food</h2>
+                <span class="product-price">₹850</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+             <div class="product-box">
+                <img src="data:image/jpeg;base64,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" alt="" class="product-img">
+                <h2 class="product-title">Optimum Highly Nutritious Food For All Fish</h2>
+                <span class="product-price">₹ 210</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+             <div class="product-box">
+                <img src="https://m.media-amazon.com/images/I/71ldyxZE-2L._AC_UF1000,1000_QL80_.jpg" alt="" class="product-img">
+                <h2 class="product-title">Meow Mix Original Choice Dry Cat Food, 16 lb Bag,</h2>
+                <span class="product-price">₹ 850</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+             <div class="product-box">
+                <img src="https://m.media-amazon.com/images/I/61d-TebyEoL._AC_UF1000,1000_QL80_.jpg" alt="" class="product-img">
+                <h2 class="product-title">TAIYO Highly Nutritious Floating Pellet Fish Food </h2>
+                <span class="product-price">₹ 500</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+             <div class="product-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTve5JV6DWzpEu_H3U2diZDM--Kgsp-BVmTP15H_zv-WRvsg9ObPv2pDxFciM3M9JT4Hac&usqp=CAU" alt="" class="product-img">
+                <h2 class="product-title">Taiyo pluss discovery Goldfish and Koi 1 Kg/2.5mm</h2>
+                <span class="product-price">₹ 650</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+             <div class="product-box">
+                <img src="https://images-cdn.ubuy.co.in/65558c1218874f72b87dc8de-pure-balance-chicken-pea-recipe.jpg" alt="" class="product-img">
+                <h2 class="product-title">Pure Balance Grain-Free Chicken & Pea Recipe Dry Dog Food, 24 lbs</h2>
+                <span class="product-price">₹ 350</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+             <div class="product-box">
+                <img src="https://i5.walmartimages.com/seo/Instinct-Raw-Boost-Grain-Free-Recipe-with-Real-Chicken-Natural-Dry-Dog-Food-by-Nature-s-Variety-10-lb-Bag_e5eb275c-391a-427f-940c-77c0fc5e3f33_3.5e46f1ebdd9165ca6edffe53264adf04.jpeg?odnHeight=640&odnWidth=640&odnBg=FFFFFF" alt="" class="product-img">
+                <h2 class="product-title">Instinct Raw BOOST</h2>
+                <span class="product-price">₹ 850</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        </div>
+    </section>
+	<style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Globals  */
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    scroll-padding: 2rem;
+}
+/* Variables  */
+:root{
+    --main-color: #fd4646;
+    --sec-color: #4946fd;
+    --text-color: #171427;
+    --bg-color: #fff;
+}
+::selection{
+    color: var(--text-color);
+    background-color: var(--main-color);
+}
+.container{
+    max-width: 1000px;
+    margin: auto;
+    width: 100%;
+}
+
+section{
+    padding: 4rem 0 3rem;
+}
+body{
+    color: var(--text-color);
+}
+img{
+    width: 100%;
+}
+
+/* =======================================  */
+/* HEADER  */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FFC800;
+    box-shadow: 0 1px 4px hsl(0 4% 15% / 10%);
+    z-index: 100;
+}
+.nav {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.logo {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--sec-color);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
+.logo span {
+    color: var(--main-color);
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+.nav-link {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--sec-color);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+#cart-icon{
+    font-size: 1.8rem;
+    cursor: pointer;
+
+}
+
+/* CART  */
+.cart{
+    position: fixed;
+    top: 0;
+    right: 0;
+    right: -100%;
+    width: 360px;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 20px;
+    background-color: var(--bg-color);
+    box-shadow: -2px solid 4px hsl(0 4% 15% / 10%);
+    border: 1px solid var(--main-color);
+    transition: 1.5s;
+}
+.cart.active{
+    right: 0;
+    transition: .5s;
+}
+.cart-title{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+.cart-box{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.cart-img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+}
+.detail-box{
+    display: grid;
+    row-gap: .5rem;
+}
+.cart-product-title{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.cart-price{
+    font-weight: 500;
+}
+.cart-quantity{
+    border: 1px solid var(--text-color);
+    outline-color: var(--main-color);
+    width: 2.4rem;
+    text-align: center;
+    font-size: 1rem;
+}
+.cart-remove{
+    font-size: 24px;
+    color: var(--main-color);
+    cursor: pointer;
+}
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid var(--text-color);
+}
+.total-title{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.total-price{
+    margin-left: .5rem;
+}
+.btn-buy{
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 20px;
+    border: none;
+    background-color: var(--sec-color);
+    color: var(--bg-color);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.btn-buy:hover{
+    background-color: var(--text-color);
+}
+#cart-close{
+    position: absolute;
+    top: 1rem;
+    right: .8rem;
+    font-size: 2rem;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+/* SHOP SECTION  */
+.shop{
+    margin-top: 2rem;
+}
+.section-title{
+    font-style: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.shop-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    gap: 1.5rem;
+}
+.product-box{
+    position: relative;
+}
+.product-box:hover{
+    padding: 10px;
+    border: 1px solid var(--text-color);
+    transition: .4s;
+}
+.product-img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    margin-bottom: .5rem;
+}
+.product-title{
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+}
+.product-price{
+    font-weight: 500;
+}
+.add-cart{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    padding: 10px;
+    cursor: pointer;
+}
+.add-cart:hover{
+    background-color: hsl(249, 32%, 17%);
+}
+
+
+/* ================ RESPONSIVE & BREAKPOINTS ============= */
+@media (max-width: 1080px){
+    .nav{
+        padding: 15px;
+    }
+    .container{
+        width: 90%;
+        margin: 0 auto;
+    }
+    section{
+        padding: 3rem 0 2rem;
+    }
+    .shop{
+        margin-top: 2rem;
+    }
+}
+
+/* For Medium Devices */
+@media (max-width: 400px){
+    .nav{
+        padding: 11px;
+    }
+    .logo{
+        font-size: 1rem;
+    }
+    .cart{
+        width: 320px;
+    }
+}
+
+/* For Small Devices */
+@media (max-width: 360px){
+    .shop{
+        margin-top: 1rem;
+    }
+    .cart{
+        width: 280px;
+    }
+}
+    </style>
+    <script>
+   // OPEN & CLOSE CART
+const cartIcon = document.querySelector("#cart-icon");
+const cart = document.querySelector(".cart");
+const closeCart = document.querySelector("#cart-close");
+
+cartIcon.addEventListener("click", () => {
+  cart.classList.add("active");
+});
+
+closeCart.addEventListener("click", () => {
+  cart.classList.remove("active");
+});
+
+// Start when the document is ready
+if (document.readyState == "loading") {
+  document.addEventListener("DOMContentLoaded", start);
+} else {
+  start();
+}
+
+// =============== START ====================
+function start() {
+  addEvents();
+}
+
+// ============= UPDATE & RERENDER ===========
+function update() {
+  addEvents();
+  updateTotal();
+}
+
+// =============== ADD EVENTS ===============
+function addEvents() {
+  // Remove items from cart
+  let cartRemove_btns = document.querySelectorAll(".cart-remove");
+  console.log(cartRemove_btns);
+  cartRemove_btns.forEach((btn) => {
+    btn.addEventListener("click", handle_removeCartItem);
+  });
+
+  // Change item quantity
+  let cartQuantity_inputs = document.querySelectorAll(".cart-quantity");
+  cartQuantity_inputs.forEach((input) => {
+    input.addEventListener("change", handle_changeItemQuantity);
+  });
+
+  // Add item to cart
+  let addCart_btns = document.querySelectorAll(".add-cart");
+  addCart_btns.forEach((btn) => {
+    btn.addEventListener("click", handle_addCartItem);
+  });
+
+  // Buy Order
+  const buy_btn = document.querySelector(".btn-buy");
+  buy_btn.addEventListener("click", handle_buyOrder);
+}
+
+// ============= HANDLE EVENTS FUNCTIONS =============
+let itemsAdded = [];
+
+function handle_addCartItem() {
+  let product = this.parentElement;
+  let title = product.querySelector(".product-title").innerHTML;
+  let price = product.querySelector(".product-price").innerHTML;
+  let imgSrc = product.querySelector(".product-img").src;
+  console.log(title, price, imgSrc);
+
+  let newToAdd = {
+    title,
+    price,
+    imgSrc,
+  };
+
+  // handle item is already exist
+  if (itemsAdded.find((el) => el.title == newToAdd.title)) {
+    alert("This Item Is Already Exist!");
+    return;
+  } else {
+    itemsAdded.push(newToAdd);
+  }
+
+  // Add product to cart
+  let cartBoxElement = CartBoxComponent(title, price, imgSrc);
+  let newNode = document.createElement("div");
+  newNode.innerHTML = cartBoxElement;
+  const cartContent = cart.querySelector(".cart-content");
+  cartContent.appendChild(newNode);
+
+  update();
+}
+
+function handle_removeCartItem() {
+  this.parentElement.remove();
+  itemsAdded = itemsAdded.filter(
+    (el) =>
+      el.title !=
+      this.parentElement.querySelector(".cart-product-title").innerHTML
+  );
+
+  update();
+}
+
+function handle_changeItemQuantity() {
+  if (isNaN(this.value) || this.value < 1) {
+    this.value = 1;
+  }
+  this.value = Math.floor(this.value); // to keep it integer
+
+  update();
+}
+
+function handle_buyOrder() {
+  if (itemsAdded.length <= 0) {
+    alert("There is No Order to Place Yet! \nPlease Make an Order first.");
+    return;
+  }
+  const cartContent = cart.querySelector(".cart-content");
+  cartContent.innerHTML = "";
+  alert("Your Order is Placed Successfully :)");
+  itemsAdded = [];
+
+  update();
+}
+
+// =========== UPDATE & RERENDER FUNCTIONS =========
+function updateTotal() {
+  let cartBoxes = document.querySelectorAll(".cart-box");
+  const totalElement = cart.querySelector(".total-price");
+  let total = 0;
+  cartBoxes.forEach((cartBox) => {
+    let priceElement = cartBox.querySelector(".cart-price");
+    let price = parseFloat(priceElement.innerHTML.replace("$", ""));
+    let quantity = cartBox.querySelector(".cart-quantity").value;
+    total += price * quantity;
+  });
+
+  // keep 2 digits after the decimal point
+  total = total.toFixed(2);
+  // or you can use also
+  // total = Math.round(total * 100) / 100;
+
+  totalElement.innerHTML = "$" + total;
+}
+
+// ============= HTML COMPONENTS =============
+function CartBoxComponent(title, price, imgSrc) {
+  return `
+    <div class="cart-box">
+        <img src=${imgSrc} alt="" class="cart-img">
+        <div class="detail-box">
+            <div class="cart-product-title">${title}</div>
+            <div class="cart-price">${price}</div>
+            <input type="number" value="1" class="cart-quantity">
+        </div>
+        <!-- REMOVE CART  -->
+        <i class='bx bxs-trash-alt cart-remove'></i>
+    </div>`;
+}
+	</script>
+</body>
+
+</html>

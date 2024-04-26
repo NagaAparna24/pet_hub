@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success Page</title>
+    <style>
+        body {
+            background-color: #FFFFFF;
+            font-family: Montserrat, Arial, sans-serif;
+        }
+        .success-container {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #FFC800;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .back-button {
+            margin-top: 20px;
+            background-color: #FFFFFF;
+            color: #FFC800;
+            border: 1px solid #FFC800;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .back-button:hover {
+            background-color: #FFC800;
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+    <div class="success-container">
+        <h2>Success!</h2>
+        <p>Your return request has been successfully submitted. We will look into it.</p>
+        <a href="{% url 'userhomepage' %}" class="back-button">Back </a>
+    </div>
+</body>
+</html>
